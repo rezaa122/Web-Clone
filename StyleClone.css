@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #111;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 15px 30px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-grow: 1;
+  padding: 0px 15px;
+  width: 100%;
+  max-width: 900px;
+  flex-direction: row;
+  /* margin-right: 300px; */
+}
+
+.search-bar input {
+  border: none;
+  flex-grow: 1;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 750px;
+}
+
+.search-bar .category {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.search-btn {
+  background-color: #3f6dfd;
+  color: white;
+  border: none;
+  gap: px;
+  margin-right: 100px;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  opacity: 1;
+}
+
+/* .search-bar button {
+  padding: 10px 25px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: #3665f3;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}  */
+
+/* .search-bar button:hover {
+  opacity: 1;
+} */
+
+.hero {
+  background-image: url(https://i.ebayimg.com/thumbs/images/g/AI8AAOSwBmNlMr8E/s-l1200.webp);
+  background-position: center;
+  border-radius: 16px;
+  padding: 60px 30px;
+  position: relative;
+  color: white;
+  text-align: left;
+  margin: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin-bottom: 15px;
+}
+
+.hero-img img {
+  width: 250px;
+}
+
+.cta {
+  background-color: white;
+  color: #00798a;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  opacity: 0.8;
+}
+
+.promo-bar {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 16px;
+  padding: 60px 30px;
+  position: relative;
+  text-align: left;
+  margin: 20px;
+}
+
+.promo-container h1 {
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+
+.promo-btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.promo-btn:hover {
+  background-color: #555;
+  color: white;
+}
+
+.trending {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trending-header h2 {
+  font-size: 24px;
+}
+
+.trending-header a {
+  display: block;
+  text-align: right;
+  color: black;
+  font-weight: 600;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.trending-header a:hover {
+  opacity: 0.6;
+}
+
+.shoes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.shoe-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: center;
+  padding: 0;
+  width: 190px;
+  height: auto;
+  box-shadow: none;
+}
+
+.shoe-card img {
+  border-radius: 50% 50% 50% 50%;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.shoe-card img:hover {
+  opacity: 1;
+}
+
+.shoe-card p {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.shoe-card p::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: black;
+  transition: width 0.4s ease;
+}
+
+.shoe-card:hover p::after {
+  width: 100%;
+}
+
+.bvlgari-promo {
+  background-image: url(https://i.ebayimg.com/images/g/7UwAAOSwH5hmzhRf/s-l1600.webp);
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 60px 30px;
+  position: relative;
+  color: white;
+  text-align: left;
+  margin: 20px;
+}
+
+.bvlgari-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.bvlgari-text p {
+  margin-bottom: 15px;
+}
+
+.bvlgari-img img {
+  max-width: 800px;
+}
+
+.cta-dark {
+  background-color: white;
+  color: black;
+  border-radius: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.cta-dark:hover {
+  opacity: 0.8;
+}
+
+.help-banner {
+  background-image: url(https://i.ebayimg.com/images/g/DxsAAOSwM2VlyiV9/s-l1600.webp);
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  padding: 60px 30px;
+  position: relative;
+  color: white;
+  text-align: left;
+  margin: 20px;
+}
+
+.help-text h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.help-text p {
+  margin-bottom: 15px;
+}
+
+.help-img img {
+  max-width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: black;
+}
+
+.cta {
+  border-radius: 18px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-columns div h4 {
+  margin-bottom: 10px;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns li {
+  margin-bottom: 6px;
+}
+
+.footer p {
+  text-align: center;
+  color: #888;
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .promo-bar {
+    padding: 30px 15px;
+  }
+
+  .shoe-card {
+    width: 100%;
+  }
+
+  .bvlgari-text h2,
+  .help-text h2 {
+    font-size: 20px;
+  }
+
+  .bvlgari-img img,
+  .help-img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
